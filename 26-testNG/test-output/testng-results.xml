@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="2" total="7" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6547" started-at="2019-06-20T17:51:45Z" finished-at="2019-06-20T17:51:51Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="6547" started-at="2019-06-20T17:51:45Z" finished-at="2019-06-20T17:51:51Z">
+      <class name="testcase2.Assertion">
+        <test-method status="FAIL" signature="softassertion()[pri:0, instance:testcase2.Assertion@1d057a39]" name="softassertion" duration-ms="11" started-at="2019-06-20T17:51:51Z" finished-at="2019-06-20T17:51:51Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Excepted] but found [actalTitle]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Excepted] but found [actalTitle]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at testcase2.Assertion.softassertion(Assertion.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- softassertion -->
+      </class> <!-- testcase2.Assertion -->
+      <class name="testcase2.AllTestNG">
+        <test-method status="PASS" signature="Before()[pri:0, instance:testcase2.AllTestNG@2b98378d]" name="Before" is-config="true" duration-ms="17" started-at="2019-06-20T17:51:45Z" finished-at="2019-06-20T17:51:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.FullTask@4b9e13df]" name="login" is-config="true" duration-ms="6155" started-at="2019-06-20T17:51:45Z" finished-at="2019-06-20T17:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:testcase2.AllTestNG@2b98378d]" name="BeforeTest" is-config="true" duration-ms="1" started-at="2019-06-20T17:51:51Z" finished-at="2019-06-20T17:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:testcases.FullTask@4b9e13df]" name="close" is-config="true" duration-ms="278" started-at="2019-06-20T17:51:51Z" finished-at="2019-06-20T17:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcase2.AllTestNG -->
+      <class name="testcases.Dataprovider">
+        <test-method status="PASS" signature="logout(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Dataprovider@475530b9]" name="logout" duration-ms="7" started-at="2019-06-20T17:51:51Z" data-provider="data1" finished-at="2019-06-20T17:51:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[phhone-1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[browser-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="logout(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Dataprovider@475530b9]" name="logout" duration-ms="2" started-at="2019-06-20T17:51:51Z" data-provider="data1" finished-at="2019-06-20T17:51:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username-2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[phhone-2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[browser-2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="logout(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Dataprovider@475530b9]" name="logout" duration-ms="1" started-at="2019-06-20T17:51:51Z" data-provider="data1" finished-at="2019-06-20T17:51:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username-3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password-3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[phhone-3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[browser-3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- testcases.Dataprovider -->
+      <class name="testcases.FullTask">
+        <test-method status="FAIL" signature="testCase(java.lang.String, java.lang.String)[pri:0, instance:testcases.FullTask@4b9e13df]" name="testCase" duration-ms="1" started-at="2019-06-20T17:51:51Z" data-provider="getData" finished-at="2019-06-20T17:51:51Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: testCase([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) tutorial]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: testCase([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) tutorial]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+      </class> <!-- testcases.FullTask -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

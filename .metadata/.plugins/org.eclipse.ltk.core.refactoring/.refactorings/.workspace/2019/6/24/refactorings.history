@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;11-Lauching Browsers&apos; to &apos;21-Lauching Browsers&apos;&#x0D;&#x0A;- Original element: &apos;11-Lauching Browsers&apos;&#x0D;&#x0A;- Renamed element: &apos;11-Lauching Browsers&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;11-Lauching Browsers&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=11-Lauching Browsers" name="21-Lauching Browsers" references="true" stamp="1560617362573" version="1.0"/>
+</session>

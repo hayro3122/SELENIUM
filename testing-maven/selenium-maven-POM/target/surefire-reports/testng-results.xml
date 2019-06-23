@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27903" started-at="2018-12-12T20:08:09Z" finished-at="2018-12-12T20:08:37Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="27903" started-at="2018-12-12T20:08:09Z" finished-at="2018-12-12T20:08:37Z">
+      <class name="POMDesign.WebOrderLoginTest">
+        <test-method status="PASS" signature="loginStatusUsingPOM()[pri:0, instance:POMDesign.WebOrderLoginTest@21bcffb5]" name="loginStatusUsingPOM" duration-ms="1587" started-at="2018-12-12T20:08:28Z" finished-at="2018-12-12T20:08:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginStatusUsingPOM -->
+      </class> <!-- POMDesign.WebOrderLoginTest -->
+      <class name="POMDesign.AllOrderTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:POMDesign.AllOrderTest@380fb434]" name="setUp" is-config="true" duration-ms="11457" started-at="2018-12-12T20:08:09Z" finished-at="2018-12-12T20:08:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:POMDesign.WebOrderLoginTest@21bcffb5]" name="setUp" is-config="true" duration-ms="7852" started-at="2018-12-12T20:08:20Z" finished-at="2018-12-12T20:08:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="labelsVerification()[pri:0, instance:POMDesign.AllOrderTest@380fb434]" name="labelsVerification" duration-ms="4431" started-at="2018-12-12T20:08:30Z" finished-at="2018-12-12T20:08:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- labelsVerification -->
+        <test-method status="PASS" signature="closeUp()[pri:0, instance:POMDesign.AllOrderTest@380fb434]" name="closeUp" is-config="true" duration-ms="1255" started-at="2018-12-12T20:08:34Z" finished-at="2018-12-12T20:08:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method status="PASS" signature="closeUp()[pri:0, instance:POMDesign.WebOrderLoginTest@21bcffb5]" name="closeUp" is-config="true" duration-ms="1215" started-at="2018-12-12T20:08:36Z" finished-at="2018-12-12T20:08:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+      </class> <!-- POMDesign.AllOrderTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

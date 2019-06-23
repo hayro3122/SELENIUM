@@ -1,0 +1,43 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class takeScreenShot {
+	
+	static WebDriver driver=null;
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hayro\\Desktop\\SELENIUM\\chromedriver.exe");
+		driver= new ChromeDriver();
+		driver.get("https://abcnews.go.com");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		takeScreenShot();
+
+	}
+private static void takeScreenShot() {
+	//Take screenshot and store as a file format
+		File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(src,  new File(System.getProperty("user.dir") + "//browser.jpg"));
+		}
+		catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+
+
+
+
+
+
+
+}

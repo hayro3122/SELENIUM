@@ -1,0 +1,17 @@
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Assertion {
+	
+	@Test
+	public void assertion() {
+		
+		String actalTitle="yahoo";
+		String Excepted="yahoo";
+		
+		Assert.assertEquals(actalTitle, Excepted);
+		Assert.assertTrue(2>3, "Error");
+		
+	}
+
+}

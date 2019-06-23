@@ -1,0 +1,25 @@
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class Testapplicatioan {
+	
+	@Test
+	public void testLogin() {
+		System.out.println("testing login");
+	}
+	@Test
+	public void testRegister() {
+		System.out.println("Testin regieter");
+	}
+	
+	@Before
+	public void openbrowser() {
+		System.out.println("Openning browser");
+	}
+	@After
+	public void closebrowser() {
+		System.out.println("Clossing browser");
+	}
+
+}

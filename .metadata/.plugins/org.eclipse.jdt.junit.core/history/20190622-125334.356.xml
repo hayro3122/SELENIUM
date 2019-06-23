@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Parameterization" project="27-junit" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="Parameterization" time="0.0" uniqueid="[engine:junit-vintage]/[runner:Parameterization]">
+    <testsuite name="[0]" time="0.0" uniqueid="[engine:junit-vintage]/[runner:Parameterization]/[test:%5B0%5D]">
+      <testcase name="balance" classname="Parameterization" time="0.0" displayname="balance[0]" uniqueid="[engine:junit-vintage]/[runner:Parameterization]/[test:%5B0%5D]/[test:balance%5B0%5D(Parameterization)]"/>
+    </testsuite>
+    <testsuite name="[1]" time="0.0" uniqueid="[engine:junit-vintage]/[runner:Parameterization]/[test:%5B1%5D]">
+      <testcase name="balance" classname="Parameterization" time="0.0" displayname="balance[1]" uniqueid="[engine:junit-vintage]/[runner:Parameterization]/[test:%5B1%5D]/[test:balance%5B1%5D(Parameterization)]"/>
+    </testsuite>
+  </testsuite>
+</testrun>

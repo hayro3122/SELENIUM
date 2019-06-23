@@ -1,0 +1,14 @@
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class assertion {
+	@Test
+	public void testApp() {
+		System.out.println("A");
+		Assert.assertEquals("Hello", "Hello");
+		Assert.assertTrue(3>10);
+	}
+	
+
+}

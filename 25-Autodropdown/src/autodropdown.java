@@ -1,0 +1,28 @@
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class autodropdown {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hayro\\Desktop\\SELENIUM\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://www.google.com");
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		
+		driver.findElement(By.cssSelector("#tsf > div:nth-child(2) input")).sendKeys("hello");
+		
+		List<WebElement> options= driver.findElements(By.cssSelector("#tsf > div:nth-child(2) ul> li"));
+		
+		for(WebElement option:options) {
+			System.out.println(option.getText());
+		}
+		options.get(3).click();
+		driver.quit();
+	}
+
+}

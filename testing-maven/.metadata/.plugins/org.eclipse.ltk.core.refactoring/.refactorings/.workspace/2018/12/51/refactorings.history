@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Calculater&apos; to &apos;selenium-maven-calculater&apos;" description="Rename resource &apos;Calculater&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Calculater" name="selenium-maven-calculater" stamp="1545148216003" updateReferences="true"/>
+</session>

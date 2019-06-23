@@ -1,0 +1,18 @@
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hayro\\Desktop\\SELENIUM\\chromedriver.exe");
+//		ChromeDriver driver= new ChromeDriver();
+//		driver.get("https://www.amazon.com/");
+//		driver.close();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\hayro\\Desktop\\SELENIUM\\geckodriver.exe");
+		FirefoxDriver driver= new FirefoxDriver();
+		driver.get("https://www.amazon.com/");
+		driver.close();
+		
+	}
+
+}

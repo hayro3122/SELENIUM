@@ -1,0 +1,32 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Task {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hayro\\Desktop\\SELENIUM\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://www.dice.com/");
+		driver.get("https://www.indeed.com/");
+		driver.navigate().back();
+		
+		String title= driver.getTitle();
+		System.out.println(title);
+		String currentUrl= driver.getCurrentUrl();
+		System.out.println(currentUrl);
+		
+		driver.navigate().forward();
+		
+		String title1= driver.getTitle();
+		System.out.println(title1);
+		String currentUrl1= driver.getCurrentUrl();
+		System.out.println(currentUrl1);
+		
+		driver.close();
+		driver.quit();
+		
+		
+	}
+
+}

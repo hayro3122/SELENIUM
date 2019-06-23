@@ -1,0 +1,43 @@
+package com.bookit.step_definitions;
+
+import static io.restassured.RestAssured.when;
+
+import org.testng.annotations.Test;
+
+import cucumber.api.java.en.Given;
+import io.restassured.http.ContentType;
+
+public class APIDay1 {
+	/*When I send a GET request to url/Employees
+	 * Then response STATUS CODE  should be 200
+	 */
+	@Test
+	public void simpleStatusCode() {
+		when().get("http://52.70.176.39:1000/ords/hr/employees").then().statusCode(200);
+	}
+	/*When I send a GET request to url/Employees
+	 * I should see the JSON response
+	 */
+	@Test
+	public void printResponse() {
+		when().get("http://52.70.176.39:1000/ords/hr/countries").body().prettyPrint();
+	}
+	/*When I send a GET request to url/countries
+	 * And accept type is "application/json"
+	 * Then I should see the JSON response
+	 */
+	@Test
+	public void getWithHeaders() {
+		given().accept(ContentType.JSON).get("http://52.70.176.39:1000/ords/hr/countries")
+		.then().statusCode(200);
+	}
+	/*When I send a GET request to url/employees/1234
+	 Then response STATUS CODE  should be 404
+	 */
+	@Test
+	public void negativeGet() {
+		when().get().then().statusCode(404);
+	}
+	
+	
+}

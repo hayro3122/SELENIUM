@@ -1,0 +1,15 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Sychronozitation {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hayro\\Desktop\\SELENIUM\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://alaskatrips.poweredbygps.com/g/pt/hotels?MDPCID=ALASKA-US.TPS.BRAND.hotels.HOTEL");
+		driver.manage().window().maximize();
+		
+		
+
+	}
+
+}

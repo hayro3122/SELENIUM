@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="hayroMaven.AmazonTest" duration-ms="13658" started-at="2018-12-06T20:01:34Z" finished-at="2018-12-06T20:01:48Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="13658" started-at="2018-12-06T20:01:34Z" finished-at="2018-12-06T20:01:48Z">
+      <class name="hayroMaven.AmazonTest">
+        <test-method status="PASS" signature="navigatetoamazon()[pri:0, instance:hayroMaven.AmazonTest@7a5d012c]" name="navigatetoamazon" duration-ms="13541" started-at="2018-12-06T20:01:35Z" finished-at="2018-12-06T20:01:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatetoamazon -->
+      </class> <!-- hayroMaven.AmazonTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- hayroMaven.AmazonTest -->
+</testng-results>

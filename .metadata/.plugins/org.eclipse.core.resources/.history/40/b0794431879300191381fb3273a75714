@@ -1,0 +1,14 @@
+import org.junit.Test;
+
+public class Testapplicatioan {
+	
+	@Test
+	public void testLogin() {
+		System.out.println("testing login");
+	}
+	@Test
+	public void testRegister() {
+		System.out.println("Testin regieter");
+	}
+
+}

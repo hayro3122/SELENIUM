@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+    <!-- <classes>
+      <class name="testcases.Dataprovider"/>
+      <class name="testcases.FullTask"/>
+      <class name="testcases.Task"/>
+      <class name="testcases.Assertion"/>
+      <class name="testcases.AllTestNG"/>
+    </classes> -->
+	<packages>
+		<package name="testcases"/>
+		<package name="testcases2"/>
+	</packages> 
+    
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

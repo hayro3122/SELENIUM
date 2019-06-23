@@ -1,0 +1,27 @@
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TaskWebTables {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hayro\\Desktop\\SELENIUM\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("http://testingpool.com/data-types-in-java/");
+		//driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		
+		int totalrows = driver.findElements(By.xpath("//*[@id=\"page\"]/div/div/div/section/div[2]/article/div/div[2]/div[1]/div[1]/div[1]/table/tbody/tr/td[1]")).size();
+		System.out.println(totalrows);
+		int totalcolumn = driver.findElements(By.xpath("//*[@id=\"page\"]/div/div/div/section/div[2]/article/div/div[2]/div[1]/div[1]/div[1]/table/tbody/tr[1]/td")).size();
+		System.out.println(totalcolumn);
+		WebElement text1=driver.findElement(By.xpath("//*[@id=\\\"page\\\"]/div/div/div/section/div[2]/article/div/div[2]/div[1]/div[1]/div[1]/table/tbody/tr[2]/td[3]"));
+		System.out.println(text1.getText());
+		
+
+	}
+
+}

@@ -1,0 +1,26 @@
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class radioandcheckbox {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hayro\\Desktop\\SELENIUM\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://tutorialehtml.com/en/html-tutorial-radio-buttons");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		
+		List<WebElement> allRadio= driver.findElements(By.name("citizenship"));
+		System.out.println(allRadio.size());
+		System.out.println(allRadio.get(1).isSelected());
+		driver.close();
+		
+		
+		
+	}
+
+}

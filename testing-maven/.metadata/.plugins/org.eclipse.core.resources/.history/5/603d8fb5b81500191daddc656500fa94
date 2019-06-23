@@ -1,0 +1,21 @@
+package com.bookit.step_definitions;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+
+public class APIDay1 {
+	/*When I send a GET request to url/Employees
+	 * Then response STATUS CODE  should be 200
+	 */
+	@Test
+	public void simpleStatusCode() {
+		when().get("http://52.70.176.39:1000/ords/hr/employees").then().statusCode(400);
+	}
+	/*When I send a GET request to url/Employees
+	 * Then response STATUS CODE  should be 200
+	 */
+	
+	
+	
+	
+}

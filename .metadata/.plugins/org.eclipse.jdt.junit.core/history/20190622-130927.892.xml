@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MySuitRunner (1)" project="27-junit" tests="6" started="6" failures="1" errors="0" ignored="1">
+  <testsuite name="MySuitRunner" time="0.03" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]">
+    <testsuite name="assertion" time="0.001" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:assertion]">
+      <testcase name="testApp" classname="assertion" time="0.0" ignored="true" displayname="testApp" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:assertion]/[test:testApp(assertion)]"/>
+      <testcase name="testApp2" classname="assertion" time="0.001" displayname="testApp2" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:assertion]/[test:testApp2(assertion)]">
+        <failure>org.opentest4j.MultipleFailuresError: Multiple Failures (2 failures)&#13;
+	expected:&lt;[h]ello&gt; but was:&lt;[H]ello&gt;&#13;
+	Olmadi kardes&#13;
+	at org.junit.vintage.engine.execution.TestRun.getStoredResultOrSuccessful(TestRun.java:166)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.fireExecutionFinished(RunListenerAdapter.java:202)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.testFinished(RunListenerAdapter.java:160)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.testFinished(RunListenerAdapter.java:76)&#13;
+	at org.junit.runner.notification.SynchronizedRunListener.testFinished(SynchronizedRunListener.java:56)&#13;
+	at org.junit.runner.notification.RunNotifier$7.notifyListener(RunNotifier.java:190)&#13;
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)&#13;
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:187)&#13;
+	at org.junit.internal.runners.model.EachTestNotifier.fireTestFinished(EachTestNotifier.java:38)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:331)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)&#13;
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:39)&#13;
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)&#13;
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)&#13;
+	at java.util.Iterator.forEachRemaining(Unknown Source)&#13;
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)&#13;
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)&#13;
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)&#13;
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:79)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:70)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="Parameterization" time="0.0" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:Parameterization]">
+      <testsuite name="[0]" time="0.0" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:Parameterization]/[test:%5B0%5D]">
+        <testcase name="balance" classname="Parameterization" time="0.0" displayname="balance[0]" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:Parameterization]/[test:%5B0%5D]/[test:balance%5B0%5D(Parameterization)]"/>
+      </testsuite>
+      <testsuite name="[1]" time="0.0" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:Parameterization]/[test:%5B1%5D]">
+        <testcase name="balance" classname="Parameterization" time="0.0" displayname="balance[1]" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:Parameterization]/[test:%5B1%5D]/[test:balance%5B1%5D(Parameterization)]"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Testapplicatioan" time="0.0" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:Testapplicatioan]">
+      <testcase name="testLogin" classname="Testapplicatioan" time="0.0" displayname="testLogin" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:Testapplicatioan]/[test:testLogin(Testapplicatioan)]"/>
+      <testcase name="testRegister" classname="Testapplicatioan" time="0.0" displayname="testRegister" uniqueid="[engine:junit-vintage]/[runner:MySuitRunner]/[test:Testapplicatioan]/[test:testRegister(Testapplicatioan)]"/>
+    </testsuite>
+  </testsuite>
+</testrun>
